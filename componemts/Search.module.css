@@ -97,4 +97,8 @@
   .searchImg {
     display: none;
   }
+  .searchSectionStyle {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

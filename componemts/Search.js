@@ -71,7 +71,6 @@ function Search(props) {
     <h1 className={style.searchTitleStyle}>站點資訊</h1>
 
     <section className={style.searchSectionStyle}>
-    <>
     <select className={style.searchSelectStyle} value={city} onChange={selectHandler}>
       <option value='台北市'>台北市</option>
       <option value='新北市'>新北市</option>
@@ -80,7 +79,6 @@ function Search(props) {
       <option value='台南市'>台南市</option>
       <option value='高雄市'>高雄市</option>
     </select>
-    </>
 
     <div className={style.searchInput}>
     <input className={style.searchInputStyle} type='text' placeholder='搜尋站點' onChange={searchHandler}/>
