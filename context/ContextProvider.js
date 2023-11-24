@@ -7,15 +7,28 @@ export const Context = createContext({
   setIsActive: () => {},
   selectedArea: [],
   setSelectedArea: () => {},
-  showHam:null,
-  setShowHam:() => {},
+  showHam: null,
+  setShowHam: () => {},
 });
 
 function ContextProvider(props) {
   const [filteredData, setFilteredData] = useState([]);
-  const [allIsActive,setallIsActive] = useState(true)
-  const [selectedArea,setSelectedArea] = useState(['松山區','信義區','大安區','中山區','中正區','大同區','萬華區','文山區','南港區','內湖區','士林區','北投區'])
-  const [showHam,setShowHam] = useState(false)
+  const [allIsActive, setallIsActive] = useState(true);
+  const [selectedArea, setSelectedArea] = useState([
+    "松山區",
+    "信義區",
+    "大安區",
+    "中山區",
+    "中正區",
+    "大同區",
+    "萬華區",
+    "文山區",
+    "南港區",
+    "內湖區",
+    "士林區",
+    "北投區",
+  ]);
+  const [showHam, setShowHam] = useState(false);
 
   const context = {
     filteredData: filteredData,
@@ -24,8 +37,8 @@ function ContextProvider(props) {
     setallIsActive: setallIsActive,
     selectedArea: selectedArea,
     setSelectedArea: setSelectedArea,
-    showHam:showHam,
-    setShowHam:setShowHam,
+    showHam: showHam,
+    setShowHam: setShowHam,
   };
 
   return (
