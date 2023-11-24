@@ -1,0 +1,51 @@
+.SearchOutcomeContainerStyle {
+  border-radius: 28px;
+}
+
+.style.SearchOutcomeStyle {
+
+}
+
+.SearchOutcomeHeaderStyle {
+  height: 66px;
+  font-size: 18px;
+  color: white;
+  background-color: #B5CC22;
+  border-radius: 28px 28px 0px 0px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.SearchOutcomeListStyle {
+  height: 66px;
+  font-size: 18px;
+  /* color: white; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.SearchOutcomeListButtonSection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.SearchOutcomeListButton {
+  cursor: pointer;
+  padding: 10px 24px;
+  background-color: rgba(181, 204, 34, 1);
+  border: none;
+  width: 85px;
+  height: 40px;
+  border-radius: 30px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.SearchOutcomeListPageText {
+  margin: 0 20px;
+}
