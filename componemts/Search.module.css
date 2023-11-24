@@ -40,6 +40,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
 .searchInputStyle {
@@ -80,6 +81,20 @@
 }
 
 .searchSelectAreasStyle {
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+.searchImg {
+  width: 502px;
+  height: 172px;
+}
+
+/*  */
+
+@media  (max-width:850px) {
+  .searchImg {
+    display: none;
+  }
 }

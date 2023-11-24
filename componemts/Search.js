@@ -26,14 +26,17 @@ function Search(props) {
   function searchHandler(event) {
     const inputValue = event.target.value;
 
-    if (inputValue === '') {
-      setSearchStation([]);
-      return;
-    }
-
     const searchResult = props.data.filter((station) => {
       return station.sna.includes(inputValue)
     })
+
+    if (inputValue === '') {
+      setSearchStation([]);
+      Ctx.setFilteredData([])
+      return;
+    }
+
+
 
     const searchStationOutcome = props.data.filter((station) => {
       return station.sna.includes(inputValue)
@@ -51,7 +54,6 @@ function Search(props) {
     })
     Ctx.setFilteredData(searchResult)
   }
-
 
   function clickHander() {
     if (Ctx.allIsActive) {
@@ -112,7 +114,7 @@ function Search(props) {
       </div>
       <img
         src='https://imgur.com/JeRjaEM.jpg'
-        style={{width:'502px',height:'172px'}}
+        className={style.searchImg}
       />
     </section>
 

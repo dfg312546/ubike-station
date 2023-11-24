@@ -1,6 +1,3 @@
-import styles from '@/styles/Home.module.css'
-import { useContext } from 'react'
-import Header from '@/componemts/Header'
 import Search from '@/componemts/Search'
 import SearchOutcome from '@/componemts/SearchOutcome'
 
@@ -31,7 +28,7 @@ export async function getStaticProps() {
     props: {
       initialData: data.map((item) => ({
         sarea: item.sarea,
-        sna: item.sna,
+        sna: item.sna.replace('YouBike2.0_', ''),
         sbi: item.sbi,
         bemp: item.bemp
       }))

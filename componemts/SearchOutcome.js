@@ -36,8 +36,8 @@ function SearchOutcome(props) {
           <span style={{width:'12%'}}>縣市</span>
           <span style={{width:'20%'}}>區域</span>
           <span style={{width:'32%'}}>站點名稱</span>
-          <span style={{width:'18%'}}>可借車輛</span>
-          <span style={{width:'18%'}}>可還空位</span>
+          <span className={style.ava}>可借車輛</span>
+          <span className={style.ava}>可還空位</span>
         </li>
         {props.data ? currentData.map((item,index) => 
         <SearchOutcomeList
@@ -78,8 +78,8 @@ export const SearchOutcomeList = (props) => {
       <span style={{width:'12%'}}>台北市</span>
       <span style={{width:'20%'}}>{props.sarea}</span>
       <span style={{width:'32%'}}>{props.sna}</span>
-      <span style={{width:'18%',color:'#b5cc22'}}>{props.sbi}</span>
-      <span style={{width:'18%',color:'#b5cc22'}}>{props.bemp}</span>
+      <span className={style.sbibemp}>{props.sbi}</span>
+      <span className={style.sbibemp}>{props.bemp}</span>
     </li>
   )
 }

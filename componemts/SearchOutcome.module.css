@@ -49,3 +49,24 @@
 .SearchOutcomeListPageText {
   margin: 0 20px;
 }
+
+.ava {
+  width: 18%;
+}
+
+.sbibemp {
+  width: 18%;
+  color:#b5cc22
+}
+
+@media  (max-width:850px) {
+  .sbibemp {
+    display: none;
+  }
+  .ava {
+    display: none;
+  }
+  .SearchOutcomeHeaderStyle {
+    justify-content: space-around;
+  }
+}

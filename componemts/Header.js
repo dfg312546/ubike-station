@@ -1,8 +1,12 @@
 import style from './Header.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router';
+import { useContext } from 'react'
+import { Context } from '@/context/ContextProvider'
+import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 
 function Header(props) {
+  const Ctx = useContext(Context)
   const router = useRouter();
 
   return (
@@ -32,6 +36,11 @@ function Header(props) {
     <button className={style.navLoginButtonStyle}>
       <span className={style.navLoginButtonTextStyle}>登入</span>
     </button>
+
+    <div className={style.hamburgerMenuIcon}>
+      <DensityMediumIcon sx={{ color: '#b5cc22' }} onClick={() => {Ctx.setShowHam(true)}} />
+    </div>
+    
   </nav>
   {props.children}
   </div>

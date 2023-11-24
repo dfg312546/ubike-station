@@ -1,0 +1,71 @@
+.navStyle {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+.closeNav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: -100%;
+}
+
+.navHeaderStyle {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  min-height: 15vh;
+}
+
+.navImgStyle {
+  width: 65px;
+  height: 65px;
+}
+
+.navCloseButtonStyle {
+  
+}
+
+.navMainStyle {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: space-between;
+  background-color: rgba(181, 204, 34, 1);
+}
+
+.navItemsStyle {
+  list-style: none;
+  text-decoration: none;
+  padding: 32px 0 0 32px;
+}
+
+.navItemStyle {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+.navItemStyleAlt {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(103, 117, 16, 1)
+}
+
+.navLoginButtonStyle {
+  margin: 0 0 32px 32px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 100px;
+  width: 81px;
+  height: 40px;
+}
+
+.navLoginButtonTextStyle {
+  color: rgba(181, 204, 34, 1);
+}
